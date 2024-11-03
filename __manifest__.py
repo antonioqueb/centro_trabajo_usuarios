@@ -7,6 +7,7 @@
     'depends': ['mrp'],
     'data': [
         'vistas/centro_trabajo_vista.xml',
+        'vistas/seguridad_reglas.xml', 
     ],
     'installable': True,
     'application': False,
