@@ -1,0 +1,14 @@
+<!-- vistas/centro_trabajo_vista.xml -->
+<odoo>
+    <record id="centro_trabajo_vista_inherit" model="ir.ui.view">
+        <field name="name">centro.trabajo.formulario.heredado</field>
+        <field name="model">mrp.workcenter</field>
+        <field name="inherit_id" ref="mrp.mrp_workcenter_view"/>
+        <field name="arch" type="xml">
+            <!-- Insertar el campo Many2many en la primera sección del formulario -->
+            <xpath expr="//group[1]" position="inside">
+                <field name="usuarios_acceso" widget="many2many_tags"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
